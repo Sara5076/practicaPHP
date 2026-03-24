@@ -10,7 +10,7 @@ $user=$_POST['user'];
 
 $pass=$_POST['pass'];
 
-$sql="SELECT * FROM usuaris WHERE username='$user' AND password='$pass'";
+$sql="SELECT * FROM usuarios WHERE username='$user' AND password='$pass'";
 
 $result=mysqli_query($conn,$sql);
 
