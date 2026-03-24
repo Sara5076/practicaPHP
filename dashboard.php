@@ -4,24 +4,22 @@ session_start();
 
 if(!isset($_SESSION['user'])){
 
-header("Location: login.php");
+header("Location: index.php");
 
 }
 
 ?>
 
-<h1>Zona privada</h1>
+<h1>Zona client TravelDream</h1>
+
+Benvingut:
 
 <?php
 
-echo "Benvinguda " . $_SESSION['user'];
+echo $_SESSION['user'];
 
 ?>
 
 <br><br>
 
-<a href="logout.php">
-
-Logout
-
-</a>
+<a href="logout.php">Logout</a>
