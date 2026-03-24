@@ -1,15 +1,10 @@
 <?php
 
-$server="localhost";
-$user="root";
-$pass="";
-$db="traveldream";
-
-$conn=mysqli_connect($server,$user,$pass,$db);
+$conn=mysqli_connect("localhost","usuari","Sara_123","traveldream");
 
 if(!$conn){
 
-die("Error connexio");
+die("Error conexion BD");
 
 }
 
