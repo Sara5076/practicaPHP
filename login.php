@@ -2,7 +2,7 @@
 
 session_start();
 
-include("db.php");
+include(__DIR__ . "/db.php");
 
 if($_POST){
 
